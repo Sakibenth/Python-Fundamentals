@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual environment
+.venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Secrets - never commit these
+.env
+
+# Model files (too big for Git)
+*.pt
+*.pth
+*.safetensors
