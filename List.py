@@ -22,6 +22,41 @@ for i in range(1,101):
 print(l2)
 l2.insert(5,101) #at 5th index,101 will be put and the rest of the element will shift right
 print(l2)
-l2.insert(len(l),110)  #inserting 110 at the end of the list. That's what append does
+l2.insert(len(l2),110)  #inserting 110 at the end of the list. That's what append does
 print(l2)
+#extend 
+order_1=['chicken','mutton','fish']
+order_2=['broiler','black_bengal','rui']
+order_1.extend(order_2)
+print(order_1)
+#append vs extend
+l1=[10,20,30]
+l2=[40,50]
+l1.append(l2)
+print(l1) #[10,20,30,[40,50]]
+print(len(l1)) #4
 
+l1=[10,20,30]
+l2='abc'
+l1.append(l2)
+print(l1) #[10,20,30,'abc']
+l1.extend(l2)
+print(l1) #[10,20,30,'abc','a','b','c']
+
+#remove
+l1=[10,20,10,20,40]
+l1.remove(40)
+print(l1)
+l1.remove(10)
+print(l1) #[20,10,20] #first occurance of 10 is removed
+#l1.remove(50) if the element is not in list then we will get value error
+
+#pop : remove and return the element at last index or specific index
+l=[10,20,30]
+print(l)
+print(l.pop()) 
+print(l)
+#with argument
+l=[10,20,40]
+print(l.pop(1))
+print(l)
